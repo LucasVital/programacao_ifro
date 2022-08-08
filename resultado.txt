@@ -1,10 +1,10 @@
 CANDIDATOS A PREFEITO:
-TETÉ DA SILVA = 0.0% 
-DUDO NETO = 100.0% 
+TETÉ DA SILVA = 100.0% 
+DUDO NETO = 0.0% 
 
 ------------------------------------------------------------
 
 CANDIDATOS A VEREADORES:
-ZÉ DO SITIO = 0.0% 
-PAULO PIMENTA = 100.0% 
+ZÉ DO SITIO = 100.0% 
+PAULO PIMENTA = 0.0% 
 SERGIO LOCUTOR = 0.0% 

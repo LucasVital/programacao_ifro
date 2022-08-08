@@ -17,7 +17,7 @@ def lista_candidatos(candidatos):
 
 def criar_arquivo():
     if not os.path.isfile('votos_prefeito.txt'):
-        with open('resultado.txt', 'w') as arquivo:
+        with open('resultado.txt', 'w', encoding="utf-8") as arquivo:
             arquivo.write('CANDIDATOS A PREFEITO:' + '\n')
             for x in range(0, len(canditados_prefeito)):
                 arquivo.write(f'{canditados_prefeito[x]} = {round((votos_prefeitos[x] / total_votos_prefeito) * 100, 2)}% \n')
