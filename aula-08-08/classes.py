@@ -6,7 +6,7 @@ class Conta:
         '_limite'
     ]
 
-    def __init__(self, numero='', titular='', saldo=0.00, limite=0.00):
+    def __init__(self, numero=None, titular='', saldo=0.00, limite=0.00):
         self.numero = numero
         self.titular = titular
         self._saldo = saldo
@@ -18,9 +18,6 @@ class Conta:
 
     @numero.setter
     def numero(self, numero):
-        self._numero = ''
-        if not numero:
-            raise Exception("Informe o número")
         self._numero = numero
 
     @property
@@ -32,6 +29,18 @@ class Conta:
         self._titular = ''
         if len(nome) >= 5:
             self._titular = nome
+
+    @property
+    def saldo(self):
+        return self._saldo
+
+    @saldo.setter
+    def saldo(self, saldo):
+        if hasattr(self, '_saldo'):
+            if self._saldo == 0.00:
+                self._saldo = saldo
+        else:
+            self._saldo = saldo
 
     @property
     def limite(self):

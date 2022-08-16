@@ -15,7 +15,7 @@ conta1.titular = 'Fulano de Tal'
 conta3 = Conta()
 
 conta3.limite = 6000
-conta3.numero = ''
+conta3.numero = 500
 
 print(conta3.limite)
 print(conta3.numero)
