@@ -1,0 +1,42 @@
+<Tela1>:
+    title: 'App soma'
+    auto_dismiss: False
+
+    GridLayout:
+        pos: self.pos
+        size: root.size
+        rows: 3
+        cols: 2
+        canvas:
+            Color:
+                rgba: (0.25, 0.23, 0.31, 1)
+            Rectangle:
+                pos: self.pos
+                size: root.size
+        Label:
+            text: 'Num1:'
+            color: [0,0,0,1]
+        TextInput:
+            id: txt1
+            hint_text:  'Valor 1'
+            size_hint: 1.5, 0.03
+
+        Label:
+            text: 'Num2:'
+            color: [0,0,0,1]
+        TextInput:
+            id: txt2
+            hint_text:  'Valor 2'
+            size_hint: 1.5, 0.03
+
+        BoxLayout:
+            Button:
+                text: 'Somar'
+                size_hint: 0.5, 0.3
+                #pos_hint: {'center': (0.5, 0.5)}
+                on_press: root.somar()
+
+        Label:
+            id: lbResult
+            font_size: '24sp'
+            color: 'red'
